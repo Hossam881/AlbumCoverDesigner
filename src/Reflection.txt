@@ -1,0 +1,21 @@
+The Album Cover Designer program is a computer game implemented using Java OO Concept.
+ This program ask the user to guess the line-up of musicians while displaying the previous
+  attempts until the user gets the right answer. The code is separated into multiple classes.
+  The first class “LineUp” is used to represent a lineup that stores a sequence of musicians.
+  The “DraftCover” class is where a user will suggest a lineup where it will be validated against
+   the actual lineup. The “AlbumCoverGame” is used to keep track of the previous attempts in order
+    to store these attempts I created a class “Node” to store them in a linked list. Finally, the
+    “AlbumCoverDesignerCli” class Is used to interact with a user through the command line interface.
+     Throughout the program, I included the main methods to test code alongside the provide tester
+     to debug the code. There are multiple methods used throughout the classes mainly consisting
+     of constructors use to instantiate new objects and their getter and setter methods. One
+      of the more complex methods was the “GetNumGood()” where I had to loop through both the
+      solution and suggestion lineup comparing how many musicians are in the right spot.
+      Also, the “testDraftCover()" method would store the suggestion in the linked list
+      by calling the “Node” constructor. This works by storing the draftcover object in
+      the head of the linked list and using the “pointer ” variable to point to that
+      node. Furthermore for the “toString()” method I opted to use the Java “StringBuilder” class
+      to make string concatenations easier and more efficient. For the playGame() method I used a
+      nested while loop which would not only loop until the user suggests the correct lineup but also
+      return the list of previous attempts each time the user gets it wrong. For both of these loops,
+       I used a Boolean condition ‘found’ which would break from the loop if there is a match.
